@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3318C9881E63F64700B7C9EC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3318C9871E63F64700B7C9EC /* 1.png */; };
 		333BD6D71E5FE62400DE0B85 /* String+Indexing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333BD6D61E5FE62400DE0B85 /* String+Indexing.swift */; };
 		ECC22F431C89177600749E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC22F421C89177600749E58 /* AppDelegate.swift */; };
 		ECC22F481C89177600749E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC22F461C89177600749E58 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3318C9871E63F64700B7C9EC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../../../../../Desktop/1.png; sourceTree = "<group>"; };
 		333BD6D61E5FE62400DE0B85 /* String+Indexing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Indexing.swift"; path = "../../../../../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/05463ACD-68DE-4DF8-99DE-9F372CDBCEBB/String+Indexing.swift"; sourceTree = "<group>"; };
 		ECC22F3F1C89177600749E58 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC22F421C89177600749E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,14 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3318C9891E63F91C00B7C9EC /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				3318C9871E63F64700B7C9EC /* 1.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		333BD6D51E5FE5F600DE0B85 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +151,6 @@
 		ECC22F721C8917D300749E58 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3318C9891E63F91C00B7C9EC /* Images */,
 				333BD6D51E5FE5F600DE0B85 /* Extensions */,
 				ECC22F701C8917C200749E58 /* HangmanViewController.swift */,
 			);
@@ -293,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC22F7C1C891A6700749E58 /* phrases.plist in Resources */,
-				3318C9881E63F64700B7C9EC /* 1.png in Resources */,
 				ECC22F4D1C89177600749E58 /* LaunchScreen.storyboard in Resources */,
 				ECC22F4A1C89177600749E58 /* Assets.xcassets in Resources */,
 				ECC22F481C89177600749E58 /* Main.storyboard in Resources */,
