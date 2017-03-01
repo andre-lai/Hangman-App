@@ -28,6 +28,9 @@ class HangmanViewController: UIViewController {
     //image count
     var imageCount: Int = 1
     
+    //win state
+    var winState: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,7 +55,6 @@ class HangmanViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -76,12 +78,15 @@ class HangmanViewController: UIViewController {
             let alert = UIAlertController(title: "You Lose!", message: mes, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
+            //to prevent additional input
+            winState = true
         }
     }
     
     @IBOutlet weak var wordToGuess: UILabel!
     func updateWordToGuess() {
-        if (letter != nil  && !alreadyPressed.contains(letter!)) {
+        if (letter != nil  && !alreadyPressed.contains(letter!) && !winState) {
             alreadyPressed += [letter!]
             for i in 0..<characters!.count {
                 if (characters![i] == letter!) {
@@ -93,15 +98,15 @@ class HangmanViewController: UIViewController {
             }
         }
         
-        
         wordToGuess.text = String(word)
         
-        if (!word.contains("-")){
+        if (!word.contains("-") && !winState){
             //you win!
             let mes: String = "You Guessed the Phrase:\n" + String(characters!) + "!\n\nPress New Game to play again!"
             let alert = UIAlertController(title: "You Win!", message: mes, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            winState = true
         }
         
         //check letter
@@ -126,6 +131,7 @@ class HangmanViewController: UIViewController {
         word = []
         alreadyPressed = []
         imageCount = 1
+        winState = false
         
         let hangmanPhrases = HangmanPhrases()
         let phrase: String = hangmanPhrases.getRandomPhrase()
