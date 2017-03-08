@@ -48,6 +48,7 @@ class HangmanViewController: UIViewController {
         }
         updateWordToGuess()
         updateImage()
+        incorrectGuessList.text = " "
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,7 +144,7 @@ class HangmanViewController: UIViewController {
                 word += [" "]
             }
         }
-        incorrectGuessList.text = ""
+        incorrectGuessList.text = " "
         updateWordToGuess()
         updateImage()
     }
